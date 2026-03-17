@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StaffHub Roadmap</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --done: #3fb950;
+    --in-progress: #d29922;
+    --todo: #484f58;
+    --phase1: #58a6ff;
+    --phase2: #bc8cff;
+    --phase3: #f78166;
+    --phase4: #3fb950;
+    --phase5: #d29922;
+    --epic-bg: rgba(88,166,255,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  header {
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  header h1 span { color: var(--accent); }
+
+  .stats {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .stat-done .stat-value { color: var(--done); }
+  .stat-progress .stat-value { color: var(--in-progress); }
+  .stat-todo .stat-value { color: var(--text-muted); }
+  .stat-total .stat-value { color: var(--accent); }
+
+  .controls {
+    padding: 16px 32px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .controls label {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .controls select, .controls button {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .controls button:hover { border-color: var(--accent); }
+  .controls button.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+  .legend {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .gantt-wrapper {
+    overflow-x: auto;
+    padding: 0 0 24px;
+  }
+
+  .gantt {
+    min-width: 1200px;
+    position: relative;
+  }
+
+  .gantt-header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .gantt-label-col {
+    min-width: 340px;
+    max-width: 340px;
+    padding: 10px 16px 10px 32px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-right: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .gantt-timeline-col {
+    flex: 1;
+    position: relative;
+  }
+
+  .timeline-months {
+    display: flex;
+    height: 40px;
+  }
+
+  .timeline-month {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 40px;
+    border-right: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+
+  .timeline-weeks {
+    display: flex;
+    height: 28px;
+  }
+
+  .timeline-week {
+    text-align: center;
+    font-size: 11px;
+    line-height: 28px;
+    border-right: 1px solid var(--border);
+    color: var(--text-muted);
+    opacity: 0.7;
+  }
+
+  .gantt-body {
+    position: relative;
+  }
+
+  .gantt-row {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    min-height: 40px;
+    transition: background 0.15s;
+  }
+
+  .gantt-row:hover { background: rgba(255,255,255,0.02); }
+
+  .gantt-row.epic {
+    background: var(--epic-bg);
+    min-height: 44px;
+  }
+
+  .gantt-row.epic:hover { background: rgba(88,166,255,0.18); }
+
+  .gantt-row.collapsed { display: none; }
+
+  .row-label {
+    min-width: 340px;
+    max-width: 340px;
+    padding: 8px 12px 8px 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-right: 1px solid var(--border);
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .row-label .toggle {
+    cursor: pointer;
+    font-size: 14px;
+    width: 18px;
+    text-align: center;
+    color: var(--text-muted);
+    user-select: none;
+    flex-shrink: 0;
+  }
+
+  .row-label .toggle:hover { color: var(--text); }
+
+  .row-label .title {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .row-label .title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .row-label .title a:hover { color: var(--accent); text-decoration: underline; }
+
+  .epic .row-label .title { font-weight: 600; font-size: 14px; }
+
+  .task-row .row-label { padding-left: 56px; }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .status-done { background: var(--done); }
+  .status-in-progress { background: var(--in-progress); }
+  .status-todo { background: var(--todo); }
+
+  .row-timeline {
+    flex: 1;
+    position: relative;
+  }
+
+  .bar-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 22px;
+    display: flex;
+    align-items: center;
+  }
+
+  .epic .bar-container { height: 26px; }
+
+  .bar {
+    height: 100%;
+    border-radius: 4px;
+    min-width: 6px;
+    position: relative;
+  }
+
+  .bar-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    opacity: 0.9;
+  }
+
+  .bar-label {
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translate(100%, -50%);
+    font-size: 11px;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+
+  .phase-1 .bar { background: rgba(88,166,255,0.3); }
+  .phase-1 .bar-progress { background: var(--phase1); }
+  .phase-2 .bar { background: rgba(188,140,255,0.3); }
+  .phase-2 .bar-progress { background: var(--phase2); }
+  .phase-3 .bar { background: rgba(247,129,102,0.3); }
+  .phase-3 .bar-progress { background: var(--phase3); }
+  .phase-4 .bar { background: rgba(63,185,80,0.3); }
+  .phase-4 .bar-progress { background: var(--phase4); }
+  .phase-5 .bar { background: rgba(210,153,34,0.3); }
+  .phase-5 .bar-progress { background: var(--phase5); }
+  .phase-none .bar { background: rgba(139,148,158,0.3); }
+  .phase-none .bar-progress { background: var(--text-muted); }
+
+  .today-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #f85149;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .today-label {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: #f85149;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .grid-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--border);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .updated-at {
+    padding: 12px 32px;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+  }
+
+  .phase-badge {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  .phase-badge-1 { background: rgba(88,166,255,0.2); color: var(--phase1); }
+  .phase-badge-2 { background: rgba(188,140,255,0.2); color: var(--phase2); }
+  .phase-badge-3 { background: rgba(247,129,102,0.2); color: var(--phase3); }
+  .phase-badge-4 { background: rgba(63,185,80,0.2); color: var(--phase4); }
+  .phase-badge-5 { background: rgba(210,153,34,0.2); color: var(--phase5); }
+
+  .progress-text {
+    font-size: 11px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    header { padding: 16px; }
+    .gantt-label-col, .row-label { min-width: 200px; max-width: 200px; }
+    .row-label { padding-left: 16px !important; }
+    .task-row .row-label { padding-left: 36px !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1><span>StaffHub</span> Roadmap</h1>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="controls">
+  <label>Filter:</label>
+  <select id="phaseFilter">
+    <option value="all">All Phases</option>
+    <option value="Phase 1">Phase 1</option>
+    <option value="Phase 2">Phase 2</option>
+    <option value="Phase 3">Phase 3</option>
+    <option value="Phase 4">Phase 4</option>
+    <option value="Phase 5">Phase 5</option>
+  </select>
+  <select id="statusFilter">
+    <option value="all">All Statuses</option>
+    <option value="Done">Done</option>
+    <option value="In Progress">In Progress</option>
+    <option value="Todo">Todo</option>
+  </select>
+  <button id="toggleEpicsOnly" title="Show only epics">Epics Only</button>
+  <button id="expandAll" title="Expand all epics">Expand All</button>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--done)"></div>Done</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--in-progress)"></div>In Progress</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--todo)"></div>Todo</div>
+    <div class="legend-item"><div style="width:2px;height:14px;background:#f85149"></div>Today</div>
+  </div>
+</div>
+
+<div class="gantt-wrapper">
+  <div class="gantt" id="gantt"></div>
+</div>
+
+<div class="updated-at" id="updatedAt"></div>
+
+<script>
+(async function() {
+  const resp = await fetch('data.json');
+  const data = await resp.json();
+  const items = data.items || [];
+
+  // Parse items
+  const parsed = items.map(item => {
+    const isEpic = (item.title || '').includes('[EPIC]');
+    const title = (item.title || '').replace('[EPIC] ', '');
+    const status = item.status || 'Todo';
+    const phase = item.phase || '';
+    const startDate = item['start Date'] ? new Date(item['start Date']) : null;
+    const targetDate = item['target Date'] ? new Date(item['target Date']) : null;
+    const estimate = item.estimate || 0;
+    const url = item.content?.url || '';
+    const issueNumber = item.content?.number || 0;
+    const labels = item.labels || [];
+    const repo = item.content?.repository || '';
+
+    // Determine parent epic by checking sub-issue relationships
+    // The project data has parent issue info in the body
+    const body = item.content?.body || '';
+
+    return {
+      id: item.id,
+      title,
+      isEpic,
+      status,
+      phase,
+      startDate,
+      targetDate,
+      estimate,
+      url,
+      issueNumber,
+      labels,
+      body,
+      repo,
+    };
+  }).filter(i => i.startDate && i.targetDate);
+
+  // Group: epics and their tasks
+  const epics = parsed.filter(i => i.isEpic);
+  const tasks = parsed.filter(i => !i.isEpic);
+
+  // Try to associate tasks with epics by checking if task body mentions epic issue number
+  // or by matching phase/date overlap
+  const epicMap = new Map();
+  epics.forEach(e => {
+    epicMap.set(e.issueNumber, { ...e, children: [] });
+  });
+
+  // Check epic bodies for sub-issue references
+  epics.forEach(e => {
+    const epicData = epicMap.get(e.issueNumber);
+    const refs = e.body.match(/#(\d+)/g) || [];
+    const refNumbers = refs.map(r => parseInt(r.slice(1)));
+    tasks.forEach(t => {
+      if (refNumbers.includes(t.issueNumber)) {
+        epicData.children.push(t);
+        t._parentEpic = e.issueNumber;
+      }
+    });
+  });
+
+  // Orphan tasks (not linked to any epic)
+  const orphans = tasks.filter(t => !t._parentEpic);
+
+  // Build ordered list: epic, children, epic, children, ...
+  const rows = [];
+  const epicList = [...epicMap.values()].sort((a, b) =>
+    (a.startDate || new Date('2099-01-01')) - (b.startDate || new Date('2099-01-01'))
+  );
+
+  epicList.forEach(e => {
+    rows.push({ ...e, type: 'epic' });
+    const sorted = e.children.sort((a, b) => (a.startDate || 0) - (b.startDate || 0));
+    sorted.forEach(c => rows.push({ ...c, type: 'task', parentEpicNum: e.issueNumber }));
+  });
+
+  if (orphans.length) {
+    rows.push({ title: 'Other Tasks', isEpic: true, type: 'epic', issueNumber: -1, status: '', phase: '', startDate: null, targetDate: null, children: orphans, url: '' });
+    orphans.forEach(o => rows.push({ ...o, type: 'task', parentEpicNum: -1 }));
+  }
+
+  // Stats
+  const allItems = parsed;
+  const doneCount = allItems.filter(i => i.status === 'Done').length;
+  const progressCount = allItems.filter(i => i.status === 'In Progress').length;
+  const todoCount = allItems.filter(i => i.status === 'Todo').length;
+
+  document.getElementById('stats').innerHTML = `
+    <div class="stat stat-total"><div class="stat-value">${allItems.length}</div><div class="stat-label">Total</div></div>
+    <div class="stat stat-done"><div class="stat-value">${doneCount}</div><div class="stat-label">Done</div></div>
+    <div class="stat stat-progress"><div class="stat-value">${progressCount}</div><div class="stat-label">In Progress</div></div>
+    <div class="stat stat-todo"><div class="stat-value">${todoCount}</div><div class="stat-label">Todo</div></div>
+  `;
+
+  // Timeline range
+  const allDates = parsed.flatMap(i => [i.startDate, i.targetDate]).filter(Boolean);
+  const minDate = new Date(Math.min(...allDates));
+  const maxDate = new Date(Math.max(...allDates));
+
+  // Add some padding
+  minDate.setDate(minDate.getDate() - 7);
+  maxDate.setDate(maxDate.getDate() + 14);
+
+  const totalDays = (maxDate - minDate) / (1000 * 60 * 60 * 24);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  function dateToPercent(d) {
+    if (!d) return 0;
+    return ((d - minDate) / (maxDate - minDate)) * 100;
+  }
+
+  function getPhaseClass(phase) {
+    if (phase.includes('1')) return 'phase-1';
+    if (phase.includes('2')) return 'phase-2';
+    if (phase.includes('3')) return 'phase-3';
+    if (phase.includes('4')) return 'phase-4';
+    if (phase.includes('5')) return 'phase-5';
+    return 'phase-none';
+  }
+
+  function getPhaseNum(phase) {
+    const m = phase.match(/(\d+)/);
+    return m ? m[1] : '';
+  }
+
+  function getStatusClass(status) {
+    if (status === 'Done') return 'status-done';
+    if (status === 'In Progress') return 'status-in-progress';
+    return 'status-todo';
+  }
+
+  function getProgressPercent(epicRow) {
+    if (!epicRow.children || epicRow.children.length === 0) {
+      return epicRow.status === 'Done' ? 100 : epicRow.status === 'In Progress' ? 50 : 0;
+    }
+    const done = epicRow.children.filter(c => c.status === 'Done').length;
+    return Math.round((done / epicRow.children.length) * 100);
+  }
+
+  // Build weeks for header
+  const weeks = [];
+  const weekStart = new Date(minDate);
+  weekStart.setDate(weekStart.getDate() - weekStart.getDay() + 1); // Monday
+  while (weekStart < maxDate) {
+    weeks.push(new Date(weekStart));
+    weekStart.setDate(weekStart.getDate() + 7);
+  }
+
+  // Build months for header
+  const months = [];
+  const monthStart = new Date(minDate.getFullYear(), minDate.getMonth(), 1);
+  while (monthStart < maxDate) {
+    const monthEnd = new Date(monthStart.getFullYear(), monthStart.getMonth() + 1, 0);
+    const visibleStart = new Date(Math.max(monthStart, minDate));
+    const visibleEnd = new Date(Math.min(monthEnd, maxDate));
+    const width = ((visibleEnd - visibleStart) / (maxDate - minDate)) * 100;
+    months.push({
+      label: monthStart.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+      width,
+    });
+    monthStart.setMonth(monthStart.getMonth() + 1);
+  }
+
+  // Render
+  const gantt = document.getElementById('gantt');
+
+  // Header
+  let monthsHTML = months.map(m => `<div class="timeline-month" style="flex:0 0 ${m.width}%">${m.label}</div>`).join('');
+
+  let weeksHTML = weeks.map(w => {
+    const wEnd = new Date(w);
+    wEnd.setDate(wEnd.getDate() + 7);
+    const left = dateToPercent(w);
+    const right = dateToPercent(wEnd);
+    const width = right - left;
+    if (width <= 0) return '';
+    const day = w.getDate();
+    return `<div class="timeline-week" style="flex:0 0 ${width}%">${w.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</div>`;
+  }).join('');
+
+  // Grid lines (weekly)
+  let gridLines = weeks.map(w => {
+    const pct = dateToPercent(w);
+    return `<div class="grid-line" style="left:${pct}%"></div>`;
+  }).join('');
+
+  // Today line
+  const todayPct = dateToPercent(today);
+  const todayLine = (todayPct > 0 && todayPct < 100)
+    ? `<div class="today-line" style="left:${todayPct}%"><div class="today-label">Today</div></div>`
+    : '';
+
+  // Rows
+  const collapsedEpics = new Set();
+  let epicsOnly = false;
+
+  function renderRows() {
+    const phaseFilter = document.getElementById('phaseFilter').value;
+    const statusFilter = document.getElementById('statusFilter').value;
+
+    let rowsHTML = '';
+    let visibleEpics = new Set();
+
+    rows.forEach((row, idx) => {
+      if (row.type === 'epic') {
+        // Filter
+        if (phaseFilter !== 'all' && row.phase && row.phase !== phaseFilter) return;
+        if (statusFilter !== 'all' && row.status && row.status !== statusFilter) return;
+        visibleEpics.add(row.issueNumber);
+
+        const phaseClass = getPhaseClass(row.phase);
+        const progress = getProgressPercent(row);
+        const childCount = row.children ? row.children.length : 0;
+        const doneChildren = row.children ? row.children.filter(c => c.status === 'Done').length : 0;
+        const isCollapsed = collapsedEpics.has(row.issueNumber);
+        const toggleIcon = childCount > 0 ? (isCollapsed ? '&#9654;' : '&#9660;') : '&nbsp;';
+
+        let barHTML = '';
+        if (row.startDate && row.targetDate) {
+          const left = dateToPercent(row.startDate);
+          const width = dateToPercent(row.targetDate) - left;
+          barHTML = `
+            <div class="bar-container ${phaseClass}" style="left:${left}%;width:${width}%">
+              <div class="bar" style="width:100%">
+                <div class="bar-progress" style="width:${progress}%"></div>
+              </div>
+              ${progress > 0 ? `<div class="bar-label">${progress}%</div>` : ''}
+            </div>`;
+        }
+
+        const phaseNum = getPhaseNum(row.phase);
+        const phaseBadge = phaseNum ? `<span class="phase-badge phase-badge-${phaseNum}">P${phaseNum}</span>` : '';
+        const progressText = childCount > 0 ? `<span class="progress-text">${doneChildren}/${childCount}</span>` : '';
+        const titleLink = row.url ? `<a href="${row.url}" target="_blank" title="${row.title}">${row.title}</a>` : row.title;
+
+        rowsHTML += `
+          <div class="gantt-row epic" data-epic="${row.issueNumber}">
+            <div class="row-label">
+              <span class="toggle" data-epic="${row.issueNumber}">${toggleIcon}</span>
+              <span class="status-dot ${getStatusClass(row.status)}"></span>
+              ${phaseBadge}
+              <span class="title">${titleLink}</span>
+              ${progressText}
+            </div>
+            <div class="row-timeline">${barHTML}</div>
+          </div>`;
+      } else if (row.type === 'task') {
+        if (epicsOnly) return;
+        if (!visibleEpics.has(row.parentEpicNum)) return;
+        if (collapsedEpics.has(row.parentEpicNum)) return;
+        if (statusFilter !== 'all' && row.status !== statusFilter) return;
+
+        const parentEpic = epicMap.get(row.parentEpicNum);
+        const phaseClass = parentEpic ? getPhaseClass(parentEpic.phase) : 'phase-none';
+
+        let barHTML = '';
+        if (row.startDate && row.targetDate) {
+          const left = dateToPercent(row.startDate);
+          const width = Math.max(dateToPercent(row.targetDate) - left, 0.5);
+          const progress = row.status === 'Done' ? 100 : row.status === 'In Progress' ? 50 : 0;
+          barHTML = `
+            <div class="bar-container ${phaseClass}" style="left:${left}%;width:${width}%">
+              <div class="bar" style="width:100%">
+                <div class="bar-progress" style="width:${progress}%"></div>
+              </div>
+            </div>`;
+        }
+
+        const titleLink = row.url ? `<a href="${row.url}" target="_blank" title="${row.title}">${row.title}</a>` : row.title;
+        const estimate = row.estimate ? `<span class="progress-text">${row.estimate}d</span>` : '';
+
+        rowsHTML += `
+          <div class="gantt-row task-row" data-parent="${row.parentEpicNum}">
+            <div class="row-label">
+              <span class="status-dot ${getStatusClass(row.status)}"></span>
+              <span class="title">${titleLink}</span>
+              ${estimate}
+            </div>
+            <div class="row-timeline">${barHTML}</div>
+          </div>`;
+      }
+    });
+
+    gantt.innerHTML = `
+      <div class="gantt-header">
+        <div class="gantt-label-col">Item</div>
+        <div class="gantt-timeline-col">
+          <div class="timeline-months">${monthsHTML}</div>
+          <div class="timeline-weeks">${weeksHTML}</div>
+        </div>
+      </div>
+      <div class="gantt-body" style="position:relative">
+        ${gridLines}
+        ${todayLine}
+        ${rowsHTML}
+      </div>`;
+
+    // Re-attach toggle listeners
+    gantt.querySelectorAll('.toggle[data-epic]').forEach(el => {
+      el.addEventListener('click', () => {
+        const epicNum = parseInt(el.dataset.epic);
+        if (collapsedEpics.has(epicNum)) {
+          collapsedEpics.delete(epicNum);
+        } else {
+          collapsedEpics.add(epicNum);
+        }
+        renderRows();
+      });
+    });
+  }
+
+  renderRows();
+
+  // Controls
+  document.getElementById('phaseFilter').addEventListener('change', renderRows);
+  document.getElementById('statusFilter').addEventListener('change', renderRows);
+
+  document.getElementById('toggleEpicsOnly').addEventListener('click', function() {
+    epicsOnly = !epicsOnly;
+    this.classList.toggle('active', epicsOnly);
+    renderRows();
+  });
+
+  document.getElementById('expandAll').addEventListener('click', function() {
+    if (collapsedEpics.size > 0) {
+      collapsedEpics.clear();
+      this.textContent = 'Collapse All';
+    } else {
+      epicList.forEach(e => collapsedEpics.add(e.issueNumber));
+      this.textContent = 'Expand All';
+    }
+    renderRows();
+  });
+
+  // Updated timestamp
+  document.getElementById('updatedAt').textContent = `Last updated: ${new Date().toLocaleString()}`;
+})();
+</script>
+</body>
+</html>
