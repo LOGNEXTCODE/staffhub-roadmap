@@ -471,18 +471,18 @@
   const epics = parsed.filter(i => i.isEpic);
   const tasks = parsed.filter(i => !i.isEpic);
 
-  // Try to associate tasks with epics by checking if task body mentions epic issue number
-  // or by matching phase/date overlap
+  // Try to associate tasks with epics by checking if task body mentions task issue numbers
   const epicMap = new Map();
+  const epicNumbers = new Set(epics.map(e => e.issueNumber));
   epics.forEach(e => {
     epicMap.set(e.issueNumber, { ...e, children: [] });
   });
 
-  // Check epic bodies for sub-issue references
+  // Check epic bodies for sub-issue references (exclude references to other epics)
   epics.forEach(e => {
     const epicData = epicMap.get(e.issueNumber);
     const refs = e.body.match(/#(\d+)/g) || [];
-    const refNumbers = refs.map(r => parseInt(r.slice(1)));
+    const refNumbers = refs.map(r => parseInt(r.slice(1))).filter(n => !epicNumbers.has(n));
     tasks.forEach(t => {
       if (refNumbers.includes(t.issueNumber)) {
         epicData.children.push(t);
