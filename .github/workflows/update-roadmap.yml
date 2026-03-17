@@ -15,15 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Fetch project data
         env:
           GH_TOKEN: ${{ secrets.PROJECT_TOKEN }}
-        run: |
-          gh project item-list 1 \
-            --owner LOGNEXTCODE \
-            --format json \
-            --limit 200 \
-            > data.json
+        run: bash fetch.sh
 
       - name: Commit and push if changed
         run: |

@@ -432,23 +432,20 @@
   const data = await resp.json();
   const items = data.items || [];
 
-  // Parse items
+  // Parse items from GraphQL-based data.json
   const parsed = items.map(item => {
     const isEpic = (item.title || '').includes('[EPIC]');
     const title = (item.title || '').replace('[EPIC] ', '');
     const status = item.status || 'Todo';
     const phase = item.phase || '';
-    const startDate = item['start Date'] ? new Date(item['start Date']) : null;
-    const targetDate = item['target Date'] ? new Date(item['target Date']) : null;
+    const startDate = item.startDate ? new Date(item.startDate) : null;
+    const targetDate = item.targetDate ? new Date(item.targetDate) : null;
     const estimate = item.estimate || 0;
-    const url = item.content?.url || '';
-    const issueNumber = item.content?.number || 0;
+    const url = item.url || '';
+    const issueNumber = item.number || 0;
     const labels = item.labels || [];
-    const repo = item.content?.repository || '';
-
-    // Determine parent epic by checking sub-issue relationships
-    // The project data has parent issue info in the body
-    const body = item.content?.body || '';
+    const parentNumber = item.parentNumber || null;
+    const subIssuesTotal = item.subIssuesTotal || 0;
 
     return {
       id: item.id,
@@ -462,36 +459,29 @@
       url,
       issueNumber,
       labels,
-      body,
-      repo,
+      parentNumber,
+      subIssuesTotal,
     };
   }).filter(i => i.startDate && i.targetDate);
 
-  // Group: epics and their tasks
+  // Group using actual parent-child relationships from GitHub sub-issues
   const epics = parsed.filter(i => i.isEpic);
   const tasks = parsed.filter(i => !i.isEpic);
 
-  // Try to associate tasks with epics by checking if task body mentions task issue numbers
   const epicMap = new Map();
-  const epicNumbers = new Set(epics.map(e => e.issueNumber));
   epics.forEach(e => {
     epicMap.set(e.issueNumber, { ...e, children: [] });
   });
 
-  // Check epic bodies for sub-issue references (exclude references to other epics)
-  epics.forEach(e => {
-    const epicData = epicMap.get(e.issueNumber);
-    const refs = e.body.match(/#(\d+)/g) || [];
-    const refNumbers = refs.map(r => parseInt(r.slice(1))).filter(n => !epicNumbers.has(n));
-    tasks.forEach(t => {
-      if (refNumbers.includes(t.issueNumber)) {
-        epicData.children.push(t);
-        t._parentEpic = e.issueNumber;
-      }
-    });
+  // Associate tasks with their parent epic via parentNumber
+  tasks.forEach(t => {
+    if (t.parentNumber && epicMap.has(t.parentNumber)) {
+      epicMap.get(t.parentNumber).children.push(t);
+      t._parentEpic = t.parentNumber;
+    }
   });
 
-  // Orphan tasks (not linked to any epic)
+  // Orphan tasks (no parent or parent not in project)
   const orphans = tasks.filter(t => !t._parentEpic);
 
   // Build ordered list: epic, children, epic, children, ...
@@ -766,7 +756,8 @@
   });
 
   // Updated timestamp
-  document.getElementById('updatedAt').textContent = `Last updated: ${new Date().toLocaleString()}`;
+  const generatedAt = data.generatedAt ? new Date(data.generatedAt).toLocaleString() : new Date().toLocaleString();
+  document.getElementById('updatedAt').textContent = `Last updated: ${generatedAt}`;
 })();
 </script>
 </body>
