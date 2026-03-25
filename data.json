@@ -1,4 +1,1528 @@
 {
-  "generatedAt": "2026-03-25T18:44:21Z",
-  "items": []
+  "generatedAt": "2026-03-25T18:49:17Z",
+  "items": [
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUuo",
+      "number": 1,
+      "title": "[EPIC] Project Setup & Authentication",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/1",
+      "labels": [
+        "epic",
+        "P0-must-have",
+        "auth",
+        "infrastructure",
+        "estimate:8-10d"
+      ],
+      "status": "In Progress",
+      "phase": "Phase 1",
+      "startDate": "2026-02-27",
+      "targetDate": "2026-03-10",
+      "estimate": 10.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 4,
+      "subIssues": [
+        {
+          "number": 14,
+          "title": "Set up GitHub Actions CI/CD pipeline",
+          "state": "CLOSED"
+        },
+        {
+          "number": 15,
+          "title": "Implement silent token refresh",
+          "state": "CLOSED"
+        },
+        {
+          "number": 16,
+          "title": "Configure Graph API permissions",
+          "state": "CLOSED"
+        },
+        {
+          "number": 29,
+          "title": "Add biometric authentication support",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUus",
+      "number": 2,
+      "title": "[EPIC] Home Screen & Navigation",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/2",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P0-must-have",
+        "estimate:5d"
+      ],
+      "status": "Done",
+      "phase": "Phase 2",
+      "startDate": "2026-03-05",
+      "targetDate": "2026-03-11",
+      "estimate": 5.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 3,
+      "subIssues": [
+        {
+          "number": 17,
+          "title": "Create HomeViewModel with section data",
+          "state": "CLOSED"
+        },
+        {
+          "number": 18,
+          "title": "Implement scrollable home layout",
+          "state": "CLOSED"
+        },
+        {
+          "number": 19,
+          "title": "Build section tile components",
+          "state": "CLOSED"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUuw",
+      "number": 3,
+      "title": "[EPIC] WebView Component",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/3",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P0-must-have",
+        "estimate:5d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 2",
+      "startDate": "2026-03-05",
+      "targetDate": "2026-03-11",
+      "estimate": 5.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 2,
+      "subIssues": [
+        {
+          "number": 20,
+          "title": "Create WKWebView UIViewRepresentable wrapper",
+          "state": "CLOSED"
+        },
+        {
+          "number": 21,
+          "title": "Implement SSO session sharing for WebView",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUu0",
+      "number": 4,
+      "title": "[EPIC] Submit Request Forms (Quick Access)",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/4",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P0-must-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 3",
+      "startDate": "2026-03-12",
+      "targetDate": "2026-03-14",
+      "estimate": 3.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 1,
+      "subIssues": [
+        {
+          "number": 27,
+          "title": "Implement submit request form launchers",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUu4",
+      "number": 5,
+      "title": "[EPIC] Status Views - Graph API Integration",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/5",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P0-must-have",
+        "estimate:10-12d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 2",
+      "startDate": "2026-03-05",
+      "targetDate": "2026-03-18",
+      "estimate": 12.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 3,
+      "subIssues": [
+        {
+          "number": 22,
+          "title": "Create GraphService for SharePoint Lists",
+          "state": "OPEN"
+        },
+        {
+          "number": 23,
+          "title": "Define data models for tickets",
+          "state": "OPEN"
+        },
+        {
+          "number": 24,
+          "title": "Build native incident status list view",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUvA",
+      "number": 6,
+      "title": "[EPIC] Application Launcher",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/6",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P0-must-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 3",
+      "startDate": "2026-03-12",
+      "targetDate": "2026-03-17",
+      "estimate": 5.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 1,
+      "subIssues": [
+        {
+          "number": 28,
+          "title": "Implement DeepLinkService and app launchers",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUvI",
+      "number": 7,
+      "title": "[EPIC] Squads Directory",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/7",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P1-should-have",
+        "estimate:5-7d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 4",
+      "startDate": "2026-03-18",
+      "targetDate": "2026-03-25",
+      "estimate": 6.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUvM",
+      "number": 8,
+      "title": "[EPIC] Corporate Services",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/8",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P1-should-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 4",
+      "startDate": "2026-03-18",
+      "targetDate": "2026-03-20",
+      "estimate": 3.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUvY",
+      "number": 9,
+      "title": "[EPIC] Corporate Resources",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/9",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P1-should-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 4",
+      "startDate": "2026-03-18",
+      "targetDate": "2026-03-23",
+      "estimate": 4.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUvg",
+      "number": 10,
+      "title": "[EPIC] IT Team Section",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/10",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P1-should-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 4",
+      "startDate": "2026-03-18",
+      "targetDate": "2026-03-20",
+      "estimate": 3.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUvk",
+      "number": 11,
+      "title": "[EPIC] Remote Configuration System",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/11",
+      "labels": [
+        "epic",
+        "P1-should-have",
+        "infrastructure",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 1",
+      "startDate": "2026-02-27",
+      "targetDate": "2026-03-04",
+      "estimate": 5.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 2,
+      "subIssues": [
+        {
+          "number": 25,
+          "title": "Define configuration JSON schema",
+          "state": "OPEN"
+        },
+        {
+          "number": 26,
+          "title": "Implement ConfigService with caching",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUvo",
+      "number": 12,
+      "title": "[EPIC] Testing & Quality Assurance",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/12",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P1-should-have",
+        "estimate:5-7d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 5",
+      "startDate": "2026-03-26",
+      "targetDate": "2026-04-02",
+      "estimate": 6.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUvs",
+      "number": 13,
+      "title": "[EPIC] App Store Preparation & Release",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/13",
+      "labels": [
+        "epic",
+        "P1-should-have",
+        "infrastructure",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 5",
+      "startDate": "2026-04-03",
+      "targetDate": "2026-04-07",
+      "estimate": 3.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUv8",
+      "number": 14,
+      "title": "Set up GitHub Actions CI/CD pipeline",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/14",
+      "labels": [
+        "P0-must-have",
+        "infrastructure",
+        "estimate:2-3d"
+      ],
+      "status": "Done",
+      "phase": "Phase 1",
+      "startDate": "2026-02-27",
+      "targetDate": "2026-03-06",
+      "estimate": 3.0,
+      "parentNumber": 1,
+      "parentTitle": "[EPIC] Project Setup & Authentication",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUwE",
+      "number": 19,
+      "title": "Build section tile components",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/19",
+      "labels": [
+        "enhancement",
+        "P0-must-have",
+        "estimate:1-2d"
+      ],
+      "status": "Done",
+      "phase": "Phase 2",
+      "startDate": "2026-03-09",
+      "targetDate": "2026-03-11",
+      "estimate": 2.0,
+      "parentNumber": 2,
+      "parentTitle": "[EPIC] Home Screen & Navigation",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUwM",
+      "number": 20,
+      "title": "Create WKWebView UIViewRepresentable wrapper",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/20",
+      "labels": [
+        "enhancement",
+        "P0-must-have",
+        "estimate:1-2d"
+      ],
+      "status": "Done",
+      "phase": "Phase 2",
+      "startDate": "2026-03-05",
+      "targetDate": "2026-03-06",
+      "estimate": 2.0,
+      "parentNumber": 3,
+      "parentTitle": "[EPIC] WebView Component",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUwY",
+      "number": 21,
+      "title": "Implement SSO session sharing for WebView",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/21",
+      "labels": [
+        "P0-must-have",
+        "auth",
+        "estimate:2-3d"
+      ],
+      "status": "In Progress",
+      "phase": "Phase 2",
+      "startDate": "2026-03-07",
+      "targetDate": "2026-03-10",
+      "estimate": 3.0,
+      "parentNumber": 3,
+      "parentTitle": "[EPIC] WebView Component",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUwc",
+      "number": 22,
+      "title": "Create GraphService for SharePoint Lists",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/22",
+      "labels": [
+        "enhancement",
+        "P0-must-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 2",
+      "startDate": "2026-03-05",
+      "targetDate": "2026-03-08",
+      "estimate": 3.0,
+      "parentNumber": 5,
+      "parentTitle": "[EPIC] Status Views - Graph API Integration",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUwg",
+      "number": 23,
+      "title": "Define data models for tickets",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/23",
+      "labels": [
+        "enhancement",
+        "P0-must-have",
+        "estimate:1-2d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 2",
+      "startDate": "2026-03-09",
+      "targetDate": "2026-03-10",
+      "estimate": 2.0,
+      "parentNumber": 5,
+      "parentTitle": "[EPIC] Status Views - Graph API Integration",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUwk",
+      "number": 24,
+      "title": "Build native incident status list view",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/24",
+      "labels": [
+        "enhancement",
+        "P0-must-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 2",
+      "startDate": "2026-03-11",
+      "targetDate": "2026-03-14",
+      "estimate": 3.0,
+      "parentNumber": 5,
+      "parentTitle": "[EPIC] Status Views - Graph API Integration",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUws",
+      "number": 25,
+      "title": "Define configuration JSON schema",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/25",
+      "labels": [
+        "P1-should-have",
+        "infrastructure",
+        "estimate:1-2d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 1",
+      "startDate": "2026-02-27",
+      "targetDate": "2026-02-28",
+      "estimate": 2.0,
+      "parentNumber": 11,
+      "parentTitle": "[EPIC] Remote Configuration System",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUww",
+      "number": 26,
+      "title": "Implement ConfigService with caching",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/26",
+      "labels": [
+        "P1-should-have",
+        "infrastructure",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 1",
+      "startDate": "2026-03-01",
+      "targetDate": "2026-03-04",
+      "estimate": 3.0,
+      "parentNumber": 11,
+      "parentTitle": "[EPIC] Remote Configuration System",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUw0",
+      "number": 27,
+      "title": "Implement submit request form launchers",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/27",
+      "labels": [
+        "enhancement",
+        "P0-must-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 3",
+      "startDate": "2026-03-12",
+      "targetDate": "2026-03-14",
+      "estimate": 3.0,
+      "parentNumber": 4,
+      "parentTitle": "[EPIC] Submit Request Forms (Quick Access)",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUw8",
+      "number": 28,
+      "title": "Implement DeepLinkService and app launchers",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/28",
+      "labels": [
+        "enhancement",
+        "P0-must-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "Phase 3",
+      "startDate": "2026-03-12",
+      "targetDate": "2026-03-17",
+      "estimate": 5.0,
+      "parentNumber": 6,
+      "parentTitle": "[EPIC] Application Launcher",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUxA",
+      "number": 29,
+      "title": "Add biometric authentication support",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/29",
+      "labels": [
+        "P1-should-have",
+        "auth",
+        "estimate:1-2d"
+      ],
+      "status": "In Progress",
+      "phase": "Phase 1",
+      "startDate": "2026-03-08",
+      "targetDate": "2026-03-10",
+      "estimate": 2.0,
+      "parentNumber": 1,
+      "parentTitle": "[EPIC] Project Setup & Authentication",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUzU",
+      "number": 15,
+      "title": "Implement silent token refresh",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/15",
+      "labels": [
+        "P0-must-have",
+        "auth",
+        "estimate:1-2d"
+      ],
+      "status": "Done",
+      "phase": "Phase 1",
+      "startDate": "2026-02-27",
+      "targetDate": "2026-03-04",
+      "estimate": 2.0,
+      "parentNumber": 1,
+      "parentTitle": "[EPIC] Project Setup & Authentication",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUzc",
+      "number": 16,
+      "title": "Configure Graph API permissions",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/16",
+      "labels": [
+        "P0-must-have",
+        "auth",
+        "estimate:1-2d"
+      ],
+      "status": "Done",
+      "phase": "Phase 1",
+      "startDate": "2026-03-01",
+      "targetDate": "2026-03-03",
+      "estimate": 2.0,
+      "parentNumber": 1,
+      "parentTitle": "[EPIC] Project Setup & Authentication",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUzg",
+      "number": 17,
+      "title": "Create HomeViewModel with section data",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/17",
+      "labels": [
+        "enhancement",
+        "P0-must-have",
+        "estimate:1-2d"
+      ],
+      "status": "Done",
+      "phase": "Phase 2",
+      "startDate": "2026-03-05",
+      "targetDate": "2026-03-06",
+      "estimate": 2.0,
+      "parentNumber": 2,
+      "parentTitle": "[EPIC] Home Screen & Navigation",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUzo",
+      "number": 18,
+      "title": "Implement scrollable home layout",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/18",
+      "labels": [
+        "enhancement",
+        "P0-must-have",
+        "estimate:1-2d"
+      ],
+      "status": "Done",
+      "phase": "Phase 2",
+      "startDate": "2026-03-07",
+      "targetDate": "2026-03-08",
+      "estimate": 2.0,
+      "parentNumber": 2,
+      "parentTitle": "[EPIC] Home Screen & Navigation",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRsy4",
+      "number": 31,
+      "title": "[EPIC] Backend Infrastructure",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/31",
+      "labels": [
+        "epic",
+        "P0-must-have",
+        "infrastructure"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-13",
+      "targetDate": "2026-04-04",
+      "estimate": 0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 5,
+      "subIssues": [
+        {
+          "number": 36,
+          "title": "ADR: Backend architecture",
+          "state": "CLOSED"
+        },
+        {
+          "number": 37,
+          "title": "Set up FastAPI project with uv",
+          "state": "CLOSED"
+        },
+        {
+          "number": 38,
+          "title": "Database setup with PostgreSQL and SQLAlchemy",
+          "state": "OPEN"
+        },
+        {
+          "number": 39,
+          "title": "Auth middleware for MSAL/Entra ID token validation",
+          "state": "OPEN"
+        },
+        {
+          "number": 40,
+          "title": "Deployment configuration (AWS/Render)",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRszc",
+      "number": 32,
+      "title": "[EPIC] TODO List",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/32",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P1-should-have"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-24",
+      "targetDate": "2026-04-21",
+      "estimate": 0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 6,
+      "subIssues": [
+        {
+          "number": 41,
+          "title": "ADR: Task storage strategy",
+          "state": "OPEN"
+        },
+        {
+          "number": 42,
+          "title": "Design TODO data model",
+          "state": "OPEN"
+        },
+        {
+          "number": 43,
+          "title": "Backend TODO CRUD API endpoints",
+          "state": "OPEN"
+        },
+        {
+          "number": 44,
+          "title": "iOS: Task list view with filters",
+          "state": "OPEN"
+        },
+        {
+          "number": 45,
+          "title": "iOS: Task creation and editing form",
+          "state": "OPEN"
+        },
+        {
+          "number": 46,
+          "title": "iOS: Task assignment and sharing",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRs0w",
+      "number": 33,
+      "title": "[EPIC] Staff Search & Directory",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/33",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P1-should-have"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-13",
+      "targetDate": "2026-04-09",
+      "estimate": 0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 5,
+      "subIssues": [
+        {
+          "number": 47,
+          "title": "ADR: Staff data source strategy",
+          "state": "OPEN"
+        },
+        {
+          "number": 48,
+          "title": "Graph API org chart integration",
+          "state": "OPEN"
+        },
+        {
+          "number": 49,
+          "title": "Project/account mapping service",
+          "state": "OPEN"
+        },
+        {
+          "number": 50,
+          "title": "iOS: Staff search UI",
+          "state": "OPEN"
+        },
+        {
+          "number": 51,
+          "title": "iOS: Staff profile detail view",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRs2E",
+      "number": 34,
+      "title": "[EPIC] Clock In/Out",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/34",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P1-should-have"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-13",
+      "targetDate": "2026-04-16",
+      "estimate": 0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 5,
+      "subIssues": [
+        {
+          "number": 52,
+          "title": "ADR: Clock in/out data source",
+          "state": "OPEN"
+        },
+        {
+          "number": 53,
+          "title": "Investigate Cezanne API",
+          "state": "CLOSED"
+        },
+        {
+          "number": 54,
+          "title": "Backend clock in/out API",
+          "state": "OPEN"
+        },
+        {
+          "number": 55,
+          "title": "iOS: Clock in/out action UI",
+          "state": "OPEN"
+        },
+        {
+          "number": 56,
+          "title": "iOS: Clock history view",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRs2s",
+      "number": 35,
+      "title": "[EPIC] AI Assistant",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/35",
+      "labels": [
+        "enhancement",
+        "epic",
+        "P1-should-have"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-07",
+      "targetDate": "2026-04-30",
+      "estimate": 0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "subIssuesTotal": 6,
+      "subIssues": [
+        {
+          "number": 57,
+          "title": "ADR: AI assistant architecture",
+          "state": "OPEN"
+        },
+        {
+          "number": 58,
+          "title": "Backend: AI conversation service",
+          "state": "OPEN"
+        },
+        {
+          "number": 59,
+          "title": "Backend: Knowledge base ingestion",
+          "state": "OPEN"
+        },
+        {
+          "number": 60,
+          "title": "iOS: Chat UI",
+          "state": "OPEN"
+        },
+        {
+          "number": 61,
+          "title": "Backend: AI action framework",
+          "state": "OPEN"
+        },
+        {
+          "number": 62,
+          "title": "iOS: AI quick actions and suggestions",
+          "state": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRs3g",
+      "number": 36,
+      "title": "ADR: Backend architecture",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/36",
+      "labels": [
+        "P0-must-have",
+        "infrastructure",
+        "estimate:1-2d"
+      ],
+      "status": "Done",
+      "phase": "",
+      "startDate": "2026-03-13",
+      "targetDate": "2026-03-14",
+      "estimate": 0,
+      "parentNumber": 31,
+      "parentTitle": "[EPIC] Backend Infrastructure",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRs4U",
+      "number": 37,
+      "title": "Set up FastAPI project with uv",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/37",
+      "labels": [
+        "P0-must-have",
+        "infrastructure",
+        "estimate:2-3d"
+      ],
+      "status": "Done",
+      "phase": "",
+      "startDate": "2026-03-17",
+      "targetDate": "2026-03-19",
+      "estimate": 0,
+      "parentNumber": 31,
+      "parentTitle": "[EPIC] Backend Infrastructure",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRs5Q",
+      "number": 38,
+      "title": "Database setup with PostgreSQL and SQLAlchemy",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/38",
+      "labels": [
+        "P0-must-have",
+        "infrastructure",
+        "estimate:2-3d"
+      ],
+      "status": "In Progress",
+      "phase": "",
+      "startDate": "2026-03-20",
+      "targetDate": "2026-03-24",
+      "estimate": 0,
+      "parentNumber": 31,
+      "parentTitle": "[EPIC] Backend Infrastructure",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRueI",
+      "number": 39,
+      "title": "Auth middleware for MSAL/Entra ID token validation",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/39",
+      "labels": [
+        "P0-must-have",
+        "auth",
+        "infrastructure",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-25",
+      "targetDate": "2026-03-27",
+      "estimate": 0,
+      "parentNumber": 31,
+      "parentTitle": "[EPIC] Backend Infrastructure",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRufw",
+      "number": 40,
+      "title": "Deployment configuration (AWS/Render)",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/40",
+      "labels": [
+        "P1-should-have",
+        "infrastructure",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-28",
+      "targetDate": "2026-04-04",
+      "estimate": 0,
+      "parentNumber": 31,
+      "parentTitle": "[EPIC] Backend Infrastructure",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRuhM",
+      "number": 41,
+      "title": "ADR: Task storage strategy",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/41",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:1-2d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-24",
+      "targetDate": "2026-03-25",
+      "estimate": 0,
+      "parentNumber": 32,
+      "parentTitle": "[EPIC] TODO List",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRujE",
+      "number": 42,
+      "title": "Design TODO data model",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/42",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-26",
+      "targetDate": "2026-03-28",
+      "estimate": 0,
+      "parentNumber": 32,
+      "parentTitle": "[EPIC] TODO List",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRuk0",
+      "number": 43,
+      "title": "Backend TODO CRUD API endpoints",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/43",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-31",
+      "targetDate": "2026-04-04",
+      "estimate": 0,
+      "parentNumber": 32,
+      "parentTitle": "[EPIC] TODO List",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRumE",
+      "number": 44,
+      "title": "iOS: Task list view with filters",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/44",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-07",
+      "targetDate": "2026-04-11",
+      "estimate": 0,
+      "parentNumber": 32,
+      "parentTitle": "[EPIC] TODO List",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRunA",
+      "number": 45,
+      "title": "iOS: Task creation and editing form",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/45",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-14",
+      "targetDate": "2026-04-16",
+      "estimate": 0,
+      "parentNumber": 32,
+      "parentTitle": "[EPIC] TODO List",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRuo0",
+      "number": 46,
+      "title": "iOS: Task assignment and sharing",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/46",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-17",
+      "targetDate": "2026-04-21",
+      "estimate": 0,
+      "parentNumber": 32,
+      "parentTitle": "[EPIC] TODO List",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRuuE",
+      "number": 47,
+      "title": "ADR: Staff data source strategy",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/47",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:1-2d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-13",
+      "targetDate": "2026-03-14",
+      "estimate": 0,
+      "parentNumber": 33,
+      "parentTitle": "[EPIC] Staff Search & Directory",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRuvU",
+      "number": 48,
+      "title": "Graph API org chart integration",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/48",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-17",
+      "targetDate": "2026-03-21",
+      "estimate": 0,
+      "parentNumber": 33,
+      "parentTitle": "[EPIC] Staff Search & Directory",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRuxQ",
+      "number": 49,
+      "title": "Project/account mapping service",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/49",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-24",
+      "targetDate": "2026-03-28",
+      "estimate": 0,
+      "parentNumber": 33,
+      "parentTitle": "[EPIC] Staff Search & Directory",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRux4",
+      "number": 50,
+      "title": "iOS: Staff search UI",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/50",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-31",
+      "targetDate": "2026-04-04",
+      "estimate": 0,
+      "parentNumber": 33,
+      "parentTitle": "[EPIC] Staff Search & Directory",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRuyw",
+      "number": 51,
+      "title": "iOS: Staff profile detail view",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/51",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-07",
+      "targetDate": "2026-04-09",
+      "estimate": 0,
+      "parentNumber": 33,
+      "parentTitle": "[EPIC] Staff Search & Directory",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRu0A",
+      "number": 52,
+      "title": "ADR: Clock in/out data source",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/52",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:1-2d"
+      ],
+      "status": "In Progress",
+      "phase": "",
+      "startDate": "2026-03-18",
+      "targetDate": "2026-03-19",
+      "estimate": 0,
+      "parentNumber": 34,
+      "parentTitle": "[EPIC] Clock In/Out",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRu0s",
+      "number": 53,
+      "title": "Investigate Cezanne API",
+      "state": "CLOSED",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/53",
+      "labels": [
+        "enhancement",
+        "P0-must-have",
+        "estimate:2-3d"
+      ],
+      "status": "Done",
+      "phase": "",
+      "startDate": "2026-03-13",
+      "targetDate": "2026-03-17",
+      "estimate": 0,
+      "parentNumber": 34,
+      "parentTitle": "[EPIC] Clock In/Out",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRu1M",
+      "number": 54,
+      "title": "Backend clock in/out API",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/54",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-03-31",
+      "targetDate": "2026-04-04",
+      "estimate": 0,
+      "parentNumber": 34,
+      "parentTitle": "[EPIC] Clock In/Out",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRu9U",
+      "number": 55,
+      "title": "iOS: Clock in/out action UI",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/55",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-07",
+      "targetDate": "2026-04-09",
+      "estimate": 0,
+      "parentNumber": 34,
+      "parentTitle": "[EPIC] Clock In/Out",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRu-8",
+      "number": 56,
+      "title": "iOS: Clock history view",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/56",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-10",
+      "targetDate": "2026-04-16",
+      "estimate": 0,
+      "parentNumber": 34,
+      "parentTitle": "[EPIC] Clock In/Out",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRu_0",
+      "number": 57,
+      "title": "ADR: AI assistant architecture",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/57",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-07",
+      "targetDate": "2026-04-09",
+      "estimate": 0,
+      "parentNumber": 35,
+      "parentTitle": "[EPIC] AI Assistant",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRvBE",
+      "number": 58,
+      "title": "Backend: AI conversation service",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/58",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:5-7d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-10",
+      "targetDate": "2026-04-18",
+      "estimate": 0,
+      "parentNumber": 35,
+      "parentTitle": "[EPIC] AI Assistant",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRvB4",
+      "number": 59,
+      "title": "Backend: Knowledge base ingestion",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/59",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:5-7d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-21",
+      "targetDate": "2026-04-29",
+      "estimate": 0,
+      "parentNumber": 35,
+      "parentTitle": "[EPIC] AI Assistant",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRvDM",
+      "number": 60,
+      "title": "iOS: Chat UI",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/60",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-14",
+      "targetDate": "2026-04-18",
+      "estimate": 0,
+      "parentNumber": 35,
+      "parentTitle": "[EPIC] AI Assistant",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRvEA",
+      "number": 61,
+      "title": "Backend: AI action framework",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/61",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:3-5d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-21",
+      "targetDate": "2026-04-25",
+      "estimate": 0,
+      "parentNumber": 35,
+      "parentTitle": "[EPIC] AI Assistant",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgnRvEo",
+      "number": 62,
+      "title": "iOS: AI quick actions and suggestions",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/62",
+      "labels": [
+        "enhancement",
+        "P1-should-have",
+        "estimate:2-3d"
+      ],
+      "status": "Todo",
+      "phase": "",
+      "startDate": "2026-04-28",
+      "targetDate": "2026-04-30",
+      "estimate": 0,
+      "parentNumber": 35,
+      "parentTitle": "[EPIC] AI Assistant",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    }
+  ]
 }
