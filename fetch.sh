@@ -39,7 +39,7 @@ gh api graphql -f query='
       }
     }
   }
-}' | tee /tmp/raw_response.json | python3 -c "
+}' | python3 -c "
 import json, sys
 from datetime import datetime, timezone
 
@@ -93,8 +93,4 @@ output = {
 json.dump(output, sys.stdout, indent=2)
 " > "$SCRIPT_DIR/data.json"
 
-echo "Raw API response (first 500 chars):"
-head -c 500 /tmp/raw_response.json
-echo ""
-echo "Total nodes in response: $(python3 -c "import json; d=json.load(open('/tmp/raw_response.json')); print(len(d.get('data',{}).get('organization',{}).get('projectV2',{}).get('items',{}).get('nodes',[])))")"
 echo "Generated data.json with $(python3 -c "import json; print(len(json.load(open('$SCRIPT_DIR/data.json'))['items']))" ) items"
