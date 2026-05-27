@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T15:43:13Z",
+  "generatedAt": "2026-05-27T16:15:35Z",
   "items": [
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUuo",
@@ -1542,8 +1542,29 @@
       "estimate": 0,
       "parentNumber": null,
       "parentTitle": null,
-      "subIssuesTotal": 0,
-      "subIssues": []
+      "subIssuesTotal": 4,
+      "subIssues": [
+        {
+          "number": 69,
+          "title": "ADR: Calendar / agenda source (Graph /me/calendarView)",
+          "state": "OPEN"
+        },
+        {
+          "number": 70,
+          "title": "Backend: /calendar endpoints (today, week, upcoming)",
+          "state": "OPEN"
+        },
+        {
+          "number": 71,
+          "title": "Backend: extend GraphClient with calendar methods",
+          "state": "OPEN"
+        },
+        {
+          "number": 72,
+          "title": "iOS: Agenda view (today/week/upcoming sections)",
+          "state": "OPEN"
+        }
+      ]
     },
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9VME",
@@ -1560,8 +1581,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 68,
+      "parentTitle": "[EPIC] Agenda \u2014 Calendar integration",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1580,8 +1601,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 68,
+      "parentTitle": "[EPIC] Agenda \u2014 Calendar integration",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1600,8 +1621,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 68,
+      "parentTitle": "[EPIC] Agenda \u2014 Calendar integration",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1620,8 +1641,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 68,
+      "parentTitle": "[EPIC] Agenda \u2014 Calendar integration",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1643,8 +1664,19 @@
       "estimate": 0,
       "parentNumber": null,
       "parentTitle": null,
-      "subIssuesTotal": 0,
-      "subIssues": []
+      "subIssuesTotal": 2,
+      "subIssues": [
+        {
+          "number": 74,
+          "title": "Backend: GET /home/summary endpoint",
+          "state": "OPEN"
+        },
+        {
+          "number": 75,
+          "title": "iOS: Inicio screen wiring to /home/summary",
+          "state": "OPEN"
+        }
+      ]
     },
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9Vfo",
@@ -1661,8 +1693,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 73,
+      "parentTitle": "[EPIC] Inicio \u2014 Home dashboard aggregator",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1681,8 +1713,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 73,
+      "parentTitle": "[EPIC] Inicio \u2014 Home dashboard aggregator",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1704,8 +1736,39 @@
       "estimate": 0,
       "parentNumber": null,
       "parentTitle": null,
-      "subIssuesTotal": 0,
-      "subIssues": []
+      "subIssuesTotal": 6,
+      "subIssues": [
+        {
+          "number": 77,
+          "title": "ADR: Cezanne absences mapping",
+          "state": "OPEN"
+        },
+        {
+          "number": 78,
+          "title": "Backend: extend CezanneClient with absence methods",
+          "state": "OPEN"
+        },
+        {
+          "number": 79,
+          "title": "Backend: /vacations router (balance, history, types, request)",
+          "state": "OPEN"
+        },
+        {
+          "number": 80,
+          "title": "Backend: integration tests for /vacations (WireMock Cezanne)",
+          "state": "OPEN"
+        },
+        {
+          "number": 81,
+          "title": "iOS: Vacaciones view and request bottom-sheet",
+          "state": "OPEN"
+        },
+        {
+          "number": 82,
+          "title": "Wire Inicio 'D\u00edas disponibles' to /vacations/balance",
+          "state": "OPEN"
+        }
+      ]
     },
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9Vto",
@@ -1722,8 +1785,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 76,
+      "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1742,8 +1805,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 76,
+      "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1762,8 +1825,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 76,
+      "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1782,8 +1845,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 76,
+      "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1802,8 +1865,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 76,
+      "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1822,8 +1885,8 @@
       "startDate": "",
       "targetDate": "",
       "estimate": 0,
-      "parentNumber": null,
-      "parentTitle": null,
+      "parentNumber": 76,
+      "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
       "subIssuesTotal": 0,
       "subIssues": []
     }
