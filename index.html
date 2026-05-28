@@ -373,6 +373,21 @@
   .phase-badge-4 { background: rgba(63,185,80,0.2); color: var(--phase4); }
   .phase-badge-5 { background: rgba(210,153,34,0.2); color: var(--phase5); }
 
+  .milestone-badge {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    flex-shrink: 0;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .progress-text {
     font-size: 11px;
     color: var(--text-muted);
@@ -410,6 +425,9 @@
     <option value="In Progress">In Progress</option>
     <option value="Todo">Todo</option>
   </select>
+  <select id="milestoneFilter">
+    <option value="all">All Milestones</option>
+  </select>
   <button id="toggleEpicsOnly" title="Show only epics">Epics Only</button>
   <button id="expandAll" title="Expand all epics">Expand All</button>
   <div class="legend">
@@ -446,6 +464,8 @@
     const labels = item.labels || [];
     const parentNumber = item.parentNumber || null;
     const subIssuesTotal = item.subIssuesTotal || 0;
+    const milestone = item.milestone || '';
+    const milestoneDueOn = item.milestoneDueOn || '';
 
     return {
       id: item.id,
@@ -461,6 +481,8 @@
       labels,
       parentNumber,
       subIssuesTotal,
+      milestone,
+      milestoneDueOn,
     };
   }).filter(i => i.startDate && i.targetDate);
 
@@ -500,6 +522,24 @@
     rows.push({ title: 'Other Tasks', isEpic: true, type: 'epic', issueNumber: -1, status: '', phase: '', startDate: null, targetDate: null, children: orphans, url: '' });
     orphans.forEach(o => rows.push({ ...o, type: 'task', parentEpicNum: -1 }));
   }
+
+  // Populate milestone filter from data
+  const milestoneSet = new Map(); // title -> dueOn
+  parsed.forEach(i => {
+    if (i.milestone && !milestoneSet.has(i.milestone)) {
+      milestoneSet.set(i.milestone, i.milestoneDueOn || '');
+    }
+  });
+  const milestoneFilterEl = document.getElementById('milestoneFilter');
+  [...milestoneSet.entries()]
+    .sort((a, b) => (a[1] || 'zzz').localeCompare(b[1] || 'zzz'))
+    .forEach(([title, dueOn]) => {
+      const opt = document.createElement('option');
+      opt.value = title;
+      const due = dueOn ? ` (due ${dueOn.slice(0, 10)})` : '';
+      opt.textContent = title + due;
+      milestoneFilterEl.appendChild(opt);
+    });
 
   // Stats
   const allItems = parsed;
@@ -620,6 +660,7 @@
   function renderRows() {
     const phaseFilter = document.getElementById('phaseFilter').value;
     const statusFilter = document.getElementById('statusFilter').value;
+    const milestoneFilter = document.getElementById('milestoneFilter').value;
 
     let rowsHTML = '';
     let visibleEpics = new Set();
@@ -629,6 +670,12 @@
         // Filter
         if (phaseFilter !== 'all' && row.phase && row.phase !== phaseFilter) return;
         if (statusFilter !== 'all' && row.status && row.status !== statusFilter) return;
+        // Milestone filter for epics: keep the epic if it's in the milestone OR any of its children are
+        if (milestoneFilter !== 'all') {
+          const epicInMilestone = row.milestone === milestoneFilter;
+          const anyChildInMilestone = (row.children || []).some(c => c.milestone === milestoneFilter);
+          if (!epicInMilestone && !anyChildInMilestone) return;
+        }
         visibleEpics.add(row.issueNumber);
 
         const phaseClass = getPhaseClass(row.phase);
@@ -655,6 +702,7 @@
         const phaseBadge = phaseNum ? `<span class="phase-badge phase-badge-${phaseNum}">P${phaseNum}</span>` : '';
         const progressText = childCount > 0 ? `<span class="progress-text">${doneChildren}/${childCount}</span>` : '';
         const titleLink = row.url ? `<a href="${row.url}" target="_blank" title="${row.title}">${row.title}</a>` : row.title;
+        const milestoneBadge = row.milestone ? `<span class="milestone-badge" title="Milestone: ${row.milestone}">${row.milestone}</span>` : '';
 
         rowsHTML += `
           <div class="gantt-row epic" data-epic="${row.issueNumber}">
@@ -663,6 +711,7 @@
               <span class="status-dot ${getStatusClass(row.status)}"></span>
               ${phaseBadge}
               <span class="title">${titleLink}</span>
+              ${milestoneBadge}
               ${progressText}
             </div>
             <div class="row-timeline">${barHTML}</div>
@@ -672,6 +721,7 @@
         if (!visibleEpics.has(row.parentEpicNum)) return;
         if (collapsedEpics.has(row.parentEpicNum)) return;
         if (statusFilter !== 'all' && row.status !== statusFilter) return;
+        if (milestoneFilter !== 'all' && row.milestone !== milestoneFilter) return;
 
         const parentEpic = epicMap.get(row.parentEpicNum);
         const phaseClass = parentEpic ? getPhaseClass(parentEpic.phase) : 'phase-none';
@@ -691,12 +741,14 @@
 
         const titleLink = row.url ? `<a href="${row.url}" target="_blank" title="${row.title}">${row.title}</a>` : row.title;
         const estimate = row.estimate ? `<span class="progress-text">${row.estimate}d</span>` : '';
+        const milestoneBadge = row.milestone ? `<span class="milestone-badge" title="Milestone: ${row.milestone}">${row.milestone}</span>` : '';
 
         rowsHTML += `
           <div class="gantt-row task-row" data-parent="${row.parentEpicNum}">
             <div class="row-label">
               <span class="status-dot ${getStatusClass(row.status)}"></span>
               <span class="title">${titleLink}</span>
+              ${milestoneBadge}
               ${estimate}
             </div>
             <div class="row-timeline">${barHTML}</div>
@@ -737,6 +789,7 @@
   // Controls
   document.getElementById('phaseFilter').addEventListener('change', renderRows);
   document.getElementById('statusFilter').addEventListener('change', renderRows);
+  document.getElementById('milestoneFilter').addEventListener('change', renderRows);
 
   document.getElementById('toggleEpicsOnly').addEventListener('click', function() {
     epicsOnly = !epicsOnly;
