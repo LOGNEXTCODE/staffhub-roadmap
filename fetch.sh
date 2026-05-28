@@ -28,6 +28,7 @@ gh api graphql -f query='
               url
               labels(first: 10) { nodes { name } }
               parent { number title }
+              milestone { number title dueOn state }
               subIssues(first: 30) {
                 totalCount
                 nodes { number title state }
@@ -78,6 +79,10 @@ for node in nodes:
         'estimate': fields.get('Estimate', 0),
         'parentNumber': content.get('parent', {}).get('number') if content.get('parent') else None,
         'parentTitle': content.get('parent', {}).get('title') if content.get('parent') else None,
+        'milestone': (content.get('milestone') or {}).get('title') or '',
+        'milestoneNumber': (content.get('milestone') or {}).get('number'),
+        'milestoneDueOn': (content.get('milestone') or {}).get('dueOn') or '',
+        'milestoneState': (content.get('milestone') or {}).get('state') or '',
         'subIssuesTotal': content.get('subIssues', {}).get('totalCount', 0),
         'subIssues': [
             {'number': s['number'], 'title': s['title'], 'state': s['state']}

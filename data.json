@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T21:11:44Z",
+  "generatedAt": "2026-05-27T22:47:22Z",
   "items": [
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUuo",
@@ -21,6 +21,10 @@
       "estimate": 10.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 4,
       "subIssues": [
         {
@@ -64,6 +68,10 @@
       "estimate": 5.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 3,
       "subIssues": [
         {
@@ -102,6 +110,10 @@
       "estimate": 5.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 2,
       "subIssues": [
         {
@@ -135,6 +147,10 @@
       "estimate": 3.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 1,
       "subIssues": [
         {
@@ -163,6 +179,10 @@
       "estimate": 12.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 3,
       "subIssues": [
         {
@@ -201,6 +221,10 @@
       "estimate": 5.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 1,
       "subIssues": [
         {
@@ -229,6 +253,10 @@
       "estimate": 6.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -251,6 +279,10 @@
       "estimate": 3.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -273,6 +305,10 @@
       "estimate": 4.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -295,6 +331,10 @@
       "estimate": 3.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -317,6 +357,10 @@
       "estimate": 5.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 2,
       "subIssues": [
         {
@@ -350,6 +394,10 @@
       "estimate": 6.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -372,6 +420,10 @@
       "estimate": 3.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -393,6 +445,10 @@
       "estimate": 3.0,
       "parentNumber": 1,
       "parentTitle": "[EPIC] Project Setup & Authentication",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -414,6 +470,10 @@
       "estimate": 2.0,
       "parentNumber": 2,
       "parentTitle": "[EPIC] Home Screen & Navigation",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -435,6 +495,10 @@
       "estimate": 2.0,
       "parentNumber": 3,
       "parentTitle": "[EPIC] WebView Component",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -456,6 +520,10 @@
       "estimate": 3.0,
       "parentNumber": 3,
       "parentTitle": "[EPIC] WebView Component",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -477,6 +545,10 @@
       "estimate": 3.0,
       "parentNumber": 5,
       "parentTitle": "[EPIC] Status Views - Graph API Integration",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -498,6 +570,10 @@
       "estimate": 2.0,
       "parentNumber": 5,
       "parentTitle": "[EPIC] Status Views - Graph API Integration",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -519,6 +595,10 @@
       "estimate": 3.0,
       "parentNumber": 5,
       "parentTitle": "[EPIC] Status Views - Graph API Integration",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -540,6 +620,10 @@
       "estimate": 2.0,
       "parentNumber": 11,
       "parentTitle": "[EPIC] Remote Configuration System",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -561,6 +645,10 @@
       "estimate": 3.0,
       "parentNumber": 11,
       "parentTitle": "[EPIC] Remote Configuration System",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -582,6 +670,10 @@
       "estimate": 3.0,
       "parentNumber": 4,
       "parentTitle": "[EPIC] Submit Request Forms (Quick Access)",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -603,6 +695,10 @@
       "estimate": 5.0,
       "parentNumber": 6,
       "parentTitle": "[EPIC] Application Launcher",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -624,6 +720,10 @@
       "estimate": 2.0,
       "parentNumber": 1,
       "parentTitle": "[EPIC] Project Setup & Authentication",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -645,6 +745,10 @@
       "estimate": 2.0,
       "parentNumber": 1,
       "parentTitle": "[EPIC] Project Setup & Authentication",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -666,6 +770,10 @@
       "estimate": 2.0,
       "parentNumber": 1,
       "parentTitle": "[EPIC] Project Setup & Authentication",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -687,6 +795,10 @@
       "estimate": 2.0,
       "parentNumber": 2,
       "parentTitle": "[EPIC] Home Screen & Navigation",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -708,6 +820,10 @@
       "estimate": 2.0,
       "parentNumber": 2,
       "parentTitle": "[EPIC] Home Screen & Navigation",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -729,6 +845,10 @@
       "estimate": 0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 5,
       "subIssues": [
         {
@@ -776,6 +896,10 @@
       "estimate": 0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 6,
       "subIssues": [
         {
@@ -828,6 +952,10 @@
       "estimate": 8.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 5,
       "subIssues": [
         {
@@ -875,6 +1003,10 @@
       "estimate": 0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 5,
       "subIssues": [
         {
@@ -922,6 +1054,10 @@
       "estimate": 0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 6,
       "subIssues": [
         {
@@ -974,6 +1110,10 @@
       "estimate": 0,
       "parentNumber": 31,
       "parentTitle": "[EPIC] Backend Infrastructure",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -995,6 +1135,10 @@
       "estimate": 0,
       "parentNumber": 31,
       "parentTitle": "[EPIC] Backend Infrastructure",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1016,6 +1160,10 @@
       "estimate": 0,
       "parentNumber": 31,
       "parentTitle": "[EPIC] Backend Infrastructure",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1038,6 +1186,10 @@
       "estimate": 0,
       "parentNumber": 31,
       "parentTitle": "[EPIC] Backend Infrastructure",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1059,6 +1211,10 @@
       "estimate": 0,
       "parentNumber": 31,
       "parentTitle": "[EPIC] Backend Infrastructure",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1080,6 +1236,10 @@
       "estimate": 0,
       "parentNumber": 32,
       "parentTitle": "[EPIC] TODO List",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1101,6 +1261,10 @@
       "estimate": 0,
       "parentNumber": 32,
       "parentTitle": "[EPIC] TODO List",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1122,6 +1286,10 @@
       "estimate": 0,
       "parentNumber": 32,
       "parentTitle": "[EPIC] TODO List",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1143,6 +1311,10 @@
       "estimate": 0,
       "parentNumber": 32,
       "parentTitle": "[EPIC] TODO List",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1164,6 +1336,10 @@
       "estimate": 0,
       "parentNumber": 32,
       "parentTitle": "[EPIC] TODO List",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1185,6 +1361,10 @@
       "estimate": 0,
       "parentNumber": 32,
       "parentTitle": "[EPIC] TODO List",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1206,6 +1386,10 @@
       "estimate": 0,
       "parentNumber": 33,
       "parentTitle": "[EPIC] Staff Search & Directory",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1227,6 +1411,10 @@
       "estimate": 0,
       "parentNumber": 33,
       "parentTitle": "[EPIC] Staff Search & Directory",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1248,6 +1436,10 @@
       "estimate": 0,
       "parentNumber": 33,
       "parentTitle": "[EPIC] Staff Search & Directory",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1269,6 +1461,10 @@
       "estimate": 5.0,
       "parentNumber": 33,
       "parentTitle": "[EPIC] Staff Search & Directory",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1290,6 +1486,10 @@
       "estimate": 3.0,
       "parentNumber": 33,
       "parentTitle": "[EPIC] Staff Search & Directory",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1311,6 +1511,10 @@
       "estimate": 0,
       "parentNumber": 34,
       "parentTitle": "[EPIC] Clock In/Out",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1332,6 +1536,10 @@
       "estimate": 0,
       "parentNumber": 34,
       "parentTitle": "[EPIC] Clock In/Out",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1353,6 +1561,10 @@
       "estimate": 0,
       "parentNumber": 34,
       "parentTitle": "[EPIC] Clock In/Out",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1374,6 +1586,10 @@
       "estimate": 0,
       "parentNumber": 34,
       "parentTitle": "[EPIC] Clock In/Out",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1395,6 +1611,10 @@
       "estimate": 0,
       "parentNumber": 34,
       "parentTitle": "[EPIC] Clock In/Out",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1416,6 +1636,10 @@
       "estimate": 0,
       "parentNumber": 35,
       "parentTitle": "[EPIC] AI Assistant",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1437,6 +1661,10 @@
       "estimate": 0,
       "parentNumber": 35,
       "parentTitle": "[EPIC] AI Assistant",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1458,6 +1686,10 @@
       "estimate": 0,
       "parentNumber": 35,
       "parentTitle": "[EPIC] AI Assistant",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1479,6 +1711,10 @@
       "estimate": 0,
       "parentNumber": 35,
       "parentTitle": "[EPIC] AI Assistant",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1500,6 +1736,10 @@
       "estimate": 0,
       "parentNumber": 35,
       "parentTitle": "[EPIC] AI Assistant",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1521,6 +1761,10 @@
       "estimate": 0,
       "parentNumber": 35,
       "parentTitle": "[EPIC] AI Assistant",
+      "milestone": "MVP v1.0",
+      "milestoneNumber": 1,
+      "milestoneDueOn": "",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1542,6 +1786,10 @@
       "estimate": 9.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 4,
       "subIssues": [
         {
@@ -1583,6 +1831,10 @@
       "estimate": 1.0,
       "parentNumber": 68,
       "parentTitle": "[EPIC] Agenda \u2014 Calendar integration",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1603,6 +1855,10 @@
       "estimate": 2.0,
       "parentNumber": 68,
       "parentTitle": "[EPIC] Agenda \u2014 Calendar integration",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1623,6 +1879,10 @@
       "estimate": 2.0,
       "parentNumber": 68,
       "parentTitle": "[EPIC] Agenda \u2014 Calendar integration",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1643,6 +1903,10 @@
       "estimate": 5.0,
       "parentNumber": 68,
       "parentTitle": "[EPIC] Agenda \u2014 Calendar integration",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1664,6 +1928,10 @@
       "estimate": 5.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 2,
       "subIssues": [
         {
@@ -1695,6 +1963,10 @@
       "estimate": 2.0,
       "parentNumber": 73,
       "parentTitle": "[EPIC] Inicio \u2014 Home dashboard aggregator",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1715,6 +1987,10 @@
       "estimate": 3.0,
       "parentNumber": 73,
       "parentTitle": "[EPIC] Inicio \u2014 Home dashboard aggregator",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1736,6 +2012,10 @@
       "estimate": 14.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 6,
       "subIssues": [
         {
@@ -1787,6 +2067,10 @@
       "estimate": 1.0,
       "parentNumber": 76,
       "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1807,6 +2091,10 @@
       "estimate": 3.0,
       "parentNumber": 76,
       "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1827,6 +2115,10 @@
       "estimate": 2.0,
       "parentNumber": 76,
       "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1847,6 +2139,10 @@
       "estimate": 2.0,
       "parentNumber": 76,
       "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1867,6 +2163,10 @@
       "estimate": 5.0,
       "parentNumber": 76,
       "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1887,6 +2187,10 @@
       "estimate": 1.0,
       "parentNumber": 76,
       "parentTitle": "[EPIC] Vacaciones (Cezanne absences)",
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     },
@@ -1908,6 +2212,10 @@
       "estimate": 3.0,
       "parentNumber": null,
       "parentTitle": null,
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
       "subIssuesTotal": 0,
       "subIssues": []
     }
