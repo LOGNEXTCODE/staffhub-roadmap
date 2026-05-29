@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T03:40:47Z",
+  "generatedAt": "2026-05-29T09:55:17Z",
   "items": [
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUuo",
@@ -1795,7 +1795,7 @@
         {
           "number": 69,
           "title": "ADR: Calendar / agenda source (Graph /me/calendarView)",
-          "state": "OPEN"
+          "state": "CLOSED"
         },
         {
           "number": 70,
@@ -1805,7 +1805,7 @@
         {
           "number": 71,
           "title": "Backend: extend GraphClient with calendar methods",
-          "state": "OPEN"
+          "state": "CLOSED"
         },
         {
           "number": 72,
@@ -1818,13 +1818,13 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9VME",
       "number": 69,
       "title": "ADR: Calendar / agenda source (Graph /me/calendarView)",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/69",
       "labels": [
         "enhancement",
         "P1-should-have"
       ],
-      "status": "In Progress",
+      "status": "Done",
       "phase": "Phase 2",
       "startDate": "2026-05-28",
       "targetDate": "2026-05-28",
@@ -1866,13 +1866,13 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9VS4",
       "number": 71,
       "title": "Backend: extend GraphClient with calendar methods",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/71",
       "labels": [
         "enhancement",
         "P1-should-have"
       ],
-      "status": "In Progress",
+      "status": "Done",
       "phase": "Phase 2",
       "startDate": "2026-06-01",
       "targetDate": "2026-06-02",
@@ -2021,12 +2021,12 @@
         {
           "number": 77,
           "title": "ADR: Cezanne absences mapping",
-          "state": "OPEN"
+          "state": "CLOSED"
         },
         {
           "number": 78,
           "title": "Backend: extend CezanneClient with absence methods",
-          "state": "OPEN"
+          "state": "CLOSED"
         },
         {
           "number": 79,
@@ -2054,13 +2054,13 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9Vto",
       "number": 77,
       "title": "ADR: Cezanne absences mapping",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/77",
       "labels": [
         "enhancement",
         "P1-should-have"
       ],
-      "status": "In Progress",
+      "status": "Done",
       "phase": "Phase 2",
       "startDate": "2026-05-29",
       "targetDate": "2026-05-29",
@@ -2078,13 +2078,13 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9Vw8",
       "number": 78,
       "title": "Backend: extend CezanneClient with absence methods",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/78",
       "labels": [
         "enhancement",
         "P1-should-have"
       ],
-      "status": "In Progress",
+      "status": "Done",
       "phase": "Phase 2",
       "startDate": "2026-06-03",
       "targetDate": "2026-06-05",
@@ -2108,7 +2108,7 @@
         "enhancement",
         "P1-should-have"
       ],
-      "status": "Todo",
+      "status": "In Progress",
       "phase": "Phase 2",
       "startDate": "2026-06-10",
       "targetDate": "2026-06-11",
