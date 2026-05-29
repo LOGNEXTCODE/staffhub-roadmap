@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T09:55:17Z",
+  "generatedAt": "2026-05-29T15:34:17Z",
   "items": [
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUuo",
@@ -1800,7 +1800,7 @@
         {
           "number": 70,
           "title": "Backend: /calendar endpoints (today, week, upcoming)",
-          "state": "OPEN"
+          "state": "CLOSED"
         },
         {
           "number": 71,
@@ -1842,13 +1842,13 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9VPQ",
       "number": 70,
       "title": "Backend: /calendar endpoints (today, week, upcoming)",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/70",
       "labels": [
         "enhancement",
         "P1-should-have"
       ],
-      "status": "Todo",
+      "status": "Done",
       "phase": "Phase 2",
       "startDate": "2026-06-08",
       "targetDate": "2026-06-09",
@@ -1956,7 +1956,7 @@
         "enhancement",
         "P1-should-have"
       ],
-      "status": "Todo",
+      "status": "In Progress",
       "phase": "Phase 2",
       "startDate": "2026-06-16",
       "targetDate": "2026-06-17",
@@ -2031,7 +2031,7 @@
         {
           "number": 79,
           "title": "Backend: /vacations router (balance, history, types, request)",
-          "state": "OPEN"
+          "state": "CLOSED"
         },
         {
           "number": 80,
@@ -2102,13 +2102,13 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9V0w",
       "number": 79,
       "title": "Backend: /vacations router (balance, history, types, request)",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/79",
       "labels": [
         "enhancement",
         "P1-should-have"
       ],
-      "status": "In Progress",
+      "status": "Done",
       "phase": "Phase 2",
       "startDate": "2026-06-10",
       "targetDate": "2026-06-11",
@@ -2132,7 +2132,7 @@
         "enhancement",
         "P1-should-have"
       ],
-      "status": "Todo",
+      "status": "In Progress",
       "phase": "Phase 2",
       "startDate": "2026-06-12",
       "targetDate": "2026-06-15",
