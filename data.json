@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T08:19:33Z",
+  "generatedAt": "2026-06-04T09:56:29Z",
   "items": [
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUuo",
@@ -2210,6 +2210,30 @@
       "startDate": "2026-05-28",
       "targetDate": "2026-06-01",
       "estimate": 3.0,
+      "parentNumber": null,
+      "parentTitle": null,
+      "milestone": "V1 \u2014 Bare Minimum MVP",
+      "milestoneNumber": 2,
+      "milestoneDueOn": "2026-07-06T00:00:00Z",
+      "milestoneState": "OPEN",
+      "subIssuesTotal": 0,
+      "subIssues": []
+    },
+    {
+      "id": "PVTI_lADOD6Zk6c4BQWS5zgutYmo",
+      "number": 86,
+      "title": "iOS: BFF networking layer (APIClient + BFFConfig)",
+      "state": "OPEN",
+      "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/86",
+      "labels": [
+        "enhancement",
+        "P0-must-have"
+      ],
+      "status": "In Progress",
+      "phase": "Phase 2",
+      "startDate": "2026-06-04",
+      "targetDate": "2026-06-04",
+      "estimate": 1.0,
       "parentNumber": null,
       "parentTitle": null,
       "milestone": "V1 \u2014 Bare Minimum MVP",
