@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T04:05:20Z",
+  "generatedAt": "2026-06-04T08:19:33Z",
   "items": [
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUuo",
@@ -2198,14 +2198,14 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt_C3c",
       "number": 84,
       "title": "iOS: extend MSAL scopes to acquire FastAPI BFF tokens",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/84",
       "labels": [
         "enhancement",
         "P0-must-have",
         "auth"
       ],
-      "status": "In Progress",
+      "status": "Done",
       "phase": "Phase 2",
       "startDate": "2026-05-28",
       "targetDate": "2026-06-01",
