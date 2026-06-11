@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T10:26:04Z",
+  "generatedAt": "2026-06-11T16:02:46Z",
   "items": [
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUuo",
@@ -925,7 +925,7 @@
         {
           "number": 45,
           "title": "iOS: Task creation and editing form",
-          "state": "OPEN"
+          "state": "CLOSED"
         },
         {
           "number": 46,
@@ -976,7 +976,7 @@
         {
           "number": 50,
           "title": "iOS: Staff search UI",
-          "state": "OPEN"
+          "state": "CLOSED"
         },
         {
           "number": 51,
@@ -989,14 +989,14 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgnRs2E",
       "number": 34,
       "title": "[EPIC] Clock In/Out",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/34",
       "labels": [
         "enhancement",
         "epic",
         "P1-should-have"
       ],
-      "status": "Todo",
+      "status": "Done",
       "phase": "",
       "startDate": "2026-03-13",
       "targetDate": "2026-04-16",
@@ -1027,12 +1027,12 @@
         {
           "number": 55,
           "title": "iOS: Clock in/out action UI",
-          "state": "OPEN"
+          "state": "CLOSED"
         },
         {
           "number": 56,
           "title": "iOS: Clock history view",
-          "state": "OPEN"
+          "state": "CLOSED"
         }
       ]
     },
@@ -1322,14 +1322,14 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgnRunA",
       "number": 45,
       "title": "iOS: Task creation and editing form",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/45",
       "labels": [
         "enhancement",
         "P1-should-have",
         "estimate:2-3d"
       ],
-      "status": "Todo",
+      "status": "Done",
       "phase": "",
       "startDate": "2026-04-14",
       "targetDate": "2026-04-16",
@@ -1447,14 +1447,14 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgnRux4",
       "number": 50,
       "title": "iOS: Staff search UI",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/50",
       "labels": [
         "enhancement",
         "P1-should-have",
         "estimate:3-5d"
       ],
-      "status": "Todo",
+      "status": "Done",
       "phase": "",
       "startDate": "2026-06-02",
       "targetDate": "2026-06-08",
@@ -1479,7 +1479,7 @@
         "P1-should-have",
         "estimate:2-3d"
       ],
-      "status": "Todo",
+      "status": "In Progress",
       "phase": "",
       "startDate": "2026-06-09",
       "targetDate": "2026-06-11",
@@ -1572,14 +1572,14 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgnRu9U",
       "number": 55,
       "title": "iOS: Clock in/out action UI",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/55",
       "labels": [
         "enhancement",
         "P1-should-have",
         "estimate:2-3d"
       ],
-      "status": "In Progress",
+      "status": "Done",
       "phase": "",
       "startDate": "2026-04-07",
       "targetDate": "2026-04-09",
@@ -1597,14 +1597,14 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgnRu-8",
       "number": 56,
       "title": "iOS: Clock history view",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/56",
       "labels": [
         "enhancement",
         "P1-should-have",
         "estimate:3-5d"
       ],
-      "status": "Todo",
+      "status": "Done",
       "phase": "",
       "startDate": "2026-04-10",
       "targetDate": "2026-04-16",
@@ -1896,7 +1896,7 @@
         "enhancement",
         "P1-should-have"
       ],
-      "status": "Todo",
+      "status": "In Progress",
       "phase": "Phase 2",
       "startDate": "2026-06-12",
       "targetDate": "2026-06-18",
@@ -1942,7 +1942,7 @@
         {
           "number": 75,
           "title": "iOS: Inicio screen wiring to /home/summary",
-          "state": "OPEN"
+          "state": "CLOSED"
         }
       ]
     },
@@ -1974,13 +1974,13 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9Vk8",
       "number": 75,
       "title": "iOS: Inicio screen wiring to /home/summary",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/75",
       "labels": [
         "enhancement",
         "P1-should-have"
       ],
-      "status": "In Progress",
+      "status": "Done",
       "phase": "Phase 2",
       "startDate": "2026-06-26",
       "targetDate": "2026-06-30",
