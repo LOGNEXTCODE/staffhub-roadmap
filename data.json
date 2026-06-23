@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T20:48:31Z",
+  "generatedAt": "2026-06-23T03:37:35Z",
   "items": [
     {
       "id": "PVTI_lADOD6Zk6c4BQWS5zgmVUuo",
@@ -981,7 +981,7 @@
         {
           "number": 51,
           "title": "iOS: Staff profile detail view",
-          "state": "OPEN"
+          "state": "CLOSED"
         }
       ]
     },
@@ -1472,14 +1472,14 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgnRuyw",
       "number": 51,
       "title": "iOS: Staff profile detail view",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/51",
       "labels": [
         "enhancement",
         "P1-should-have",
         "estimate:2-3d"
       ],
-      "status": "In Progress",
+      "status": "Done",
       "phase": "",
       "startDate": "2026-06-09",
       "targetDate": "2026-06-11",
@@ -1810,7 +1810,7 @@
         {
           "number": 72,
           "title": "iOS: Agenda view (today/week/upcoming sections)",
-          "state": "OPEN"
+          "state": "CLOSED"
         }
       ]
     },
@@ -1890,13 +1890,13 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9VXk",
       "number": 72,
       "title": "iOS: Agenda view (today/week/upcoming sections)",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/72",
       "labels": [
         "enhancement",
         "P1-should-have"
       ],
-      "status": "In Progress",
+      "status": "Done",
       "phase": "Phase 2",
       "startDate": "2026-06-12",
       "targetDate": "2026-06-18",
@@ -2041,7 +2041,7 @@
         {
           "number": 81,
           "title": "iOS: Vacaciones view and request bottom-sheet",
-          "state": "OPEN"
+          "state": "CLOSED"
         },
         {
           "number": 82,
@@ -2150,13 +2150,13 @@
       "id": "PVTI_lADOD6Zk6c4BQWS5zgt9V88",
       "number": 81,
       "title": "iOS: Vacaciones view and request bottom-sheet",
-      "state": "OPEN",
+      "state": "CLOSED",
       "url": "https://github.com/LOGNEXTCODE/lognext_app/issues/81",
       "labels": [
         "enhancement",
         "P1-should-have"
       ],
-      "status": "Todo",
+      "status": "Done",
       "phase": "Phase 2",
       "startDate": "2026-06-19",
       "targetDate": "2026-06-25",
